@@ -1,7 +1,6 @@
 from konlpy.tag import Okt
 # 오픈 소스 한국어 분석기
 # 속도는 느리지만, 정규화에 매우 좋음
-
 from collections import Counter
 
 def NLP(text) :
@@ -37,7 +36,7 @@ def NLP(text) :
     print("두 번째로 높은 빈도 수의 단어 : ")
     print(noun_list[1])
     print("두 단어를 합치기 : ")
-    nouns_list= noun_list[0]+noun_list[1]
+    nouns_list= noun_list[0][0]+' '+noun_list[1][0]
     print(nouns_list)
 
     '''
@@ -47,8 +46,8 @@ def NLP(text) :
     print(okt.phrases(text))
     '''
 
-    return nouns_list, noun_list[0], noun_list[1]
+    return nouns_list #, noun_list[0], noun_list[1]
 
-text=input()
-NLP(text)
+#text=input()
+#NLP(text)
 

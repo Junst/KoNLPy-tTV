@@ -36,7 +36,7 @@ KoNLPy에서 Noun_list 생성 및 배열을 통해 가장 빈도 수가 높은 �
 ![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP1.png)
 
 빈도 수가 높은 단어 2개를 단순히 합쳤습니다.
-![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP2.png)
+![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP2.PNG)
 
 
 

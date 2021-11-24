@@ -29,4 +29,15 @@ Text Input을 받습니다.
 력합니다.
 
 
+## 진행 과정
+2021.11.24
+
+KoNLPy에서 Noun_list 생성 및 배열을 통해 가장 빈도 수가 높은 단어를 체크합니다.
+![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP1.png)
+
+빈도 수가 높은 단어 2개를 단순히 합쳤습니다.
+![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP2.png)
+
+
+
 ... 개발 진행 중 (2021. 10 ~ )

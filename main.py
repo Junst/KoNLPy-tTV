@@ -1,7 +1,8 @@
+
 from konlpy.tag import Okt
 #from sklearn.feature_extraction.text import CountVectorizer
 #vectorizer = CountVectorizer(min_df=1)
-
+'''
 from selenium import webdriver
 from urllib.request import urlopen
 from selenium.webdriver.common.keys import Keys
@@ -57,8 +58,29 @@ time.sleep(2)
 for k,i in enumerate(links):
     url = i
     start = time.time()
-    urllib.request.urlretrieve(url, "./"+keyword+"_img_download/"+keyword+"_"+str(k)+".jpg")
+    urllib.request.urlretrieve(url, "./"+keyword+"_img_download/"+keyword+"_"+str(k)+".png")
     print(str(k+1)+'/'+str(len(links))+' '+keyword+' 다운로드 중....... Download time : '+str(time.time() - start)[:5]+' 초')
 print(keyword+' ---다운로드 완료---')
 
 driver.close()
+'''
+
+## moviepy clips
+import cv2
+import os
+
+keyword = '주걱'
+image_folder = './'+keyword+'_img_download'
+video_name = 'video.avi'
+
+images = [img for img in os.listdir(image_folder) if img.endswith(".jpg")]
+frame = cv2.imread(os.path.join(image_folder, images[0]))
+height, width, layers = frame.shape
+
+video = cv2.VideoWriter(video_name, 0, 1, (width,height))
+
+for image in images:
+    video.write(cv2.imread(os.path.join(image_folder, image)))
+
+cv2.destroyAllWindows()
+video.release()

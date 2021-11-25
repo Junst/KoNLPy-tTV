@@ -13,20 +13,15 @@ text To Video / 텍스트를 입력하면 그에 맞는 영상을 보여줍니�
 ## 프로세스
 ![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/%EA%B7%B8%EB%A6%BC2.png)
 
-1. KeyBoard(와 Microphone)을 통해 
-Text Input을 받습니다.
+1. KeyBoard(와 Microphone)을 통해 Text Input을 받습니다.
 
-2. 해당 Input을 Pytorch (NLP)로 분석
-합니다. : KoNLPy 
+2. 해당 Input을 Pytorch (NLP)로 분석합니다. : KoNLPy 
 
-3. 분석된 데이터의 주제를 구글에서
-크롤링을 합니다. : Selenium
+3. 분석된 데이터의 주제를 구글에서 크롤링을 합니다. : Selenium
 
-4. MoviePy라는 오픈소스를 통해 해당
-사진을 영상으로 인코딩합니다.
+4. MoviePy라는 오픈소스를 통해 해당 사진을 영상으로 인코딩합니다.
 
-5. Speaker와 Monitor로 결과물을 출
-력합니다.
+5. Speaker와 Monitor로 결과물을 출력합니다.
 
 
 ## 진행 과정

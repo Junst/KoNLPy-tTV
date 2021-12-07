@@ -33,7 +33,7 @@ chromedriver = 'C://chromedriver.exe'
 
 driver = webdriver.Chrome(chromedriver)
 socket.setdefaulttimeout(30)
-date = "2021.11.24"
+date = "2021"
 
 def createFolder(directory):
     try:

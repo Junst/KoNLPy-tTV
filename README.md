@@ -9,7 +9,6 @@ text To Video / 텍스트를 입력하면 그에 맞는 영상을 보여줍니�
 본 프로젝트는 이러한 활용 사례를 참조하여 text To Video (T-TV)를 만들고자 한다. 여러 기술들이 조합하여 들어가겠지만, 가장 핵심이 되는 기술은 NLP(자연어 처리)의 영어 BERT이다. BERT는 자연어의 양방향적 해석, 문맥을 고려한 분석이 가능한, 현 NLP 기술에서 널리 쓰이고 있는 모델이다. 따라서 이 기술을 통해 입력 받은 text를 고려하여 그에 걸맞는 Video를 연출하는 프로젝트를 진행하고자 한다. 또한 Video를 구현하기 전, 먼저 Picture를 통해 결과를 도출하는 소규모 달성과제 역시 진행하고자 한다.
 입력에서의 필요한 장비는 Jetson Nano와 Keyboard이며, 출력에서의 필요한 장비는 Monitor와 CUDA 등의 그래픽 카드로 예상하고 있다. 또한 기술적 한계가 크지 않다면, 마이크를 통한 음성 인식 역시 구현하고자 한다.
 
-
 ## 프로세스
 ![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/%EA%B7%B8%EB%A6%BC2.png)
 
@@ -24,6 +23,12 @@ text To Video / 텍스트를 입력하면 그에 맞는 영상을 보여줍니�
 5. Speaker와 Monitor로 결과물을 출력합니다.
 
 
+##개발환경
+Python 3.7.6
+
+KoNLPy를 실행하기 위해 다음을 고쳐줘야 합니다.
+pip install tweepy==3.10.0
+
 ## 진행 과정
 2021.11.24
 
@@ -32,6 +37,7 @@ KoNLPy에서 Noun_list 생성 및 배열을 통해 가장 빈도 수가 높은 �
 
 빈도 수가 높은 단어 2개를 단순히 합쳤습니다.
 ![image](https://github.com/Junst/KoNLPy_tTV/blob/master/GitPic/tTV_NLP2.PNG)
+
 
 
 

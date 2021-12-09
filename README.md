@@ -23,7 +23,7 @@ text To Video / 텍스트를 입력하면 그에 맞는 영상을 보여줍니�
 5. Speaker와 Monitor로 결과물을 출력합니다.
 
 
-##개발환경
+## 개발환경
 Python 3.7.6
 
 KoNLPy를 실행하기 위해 다음을 고쳐줘야 합니다.

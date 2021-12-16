@@ -1,7 +1,7 @@
 import sys
 import numpy as np
 import cv2
-'''
+
 # NLP
 from KoNLPy.KoNLPy_Okt import NLP
 
@@ -23,10 +23,10 @@ import os
 date = "2021"
 image_folder = './'+keyword
 video_name = 'video.avi'
-'''
+
 
 date = "2021"
-keyword = "아라시 노래"
+keyword = "아라시 노래2"
 
 # importing libraries
 import os
@@ -106,17 +106,19 @@ def generate_video():
 
     video = cv2.VideoWriter(video_name, 0, 1, (width, height))
 
-    # Appending the images to the video one by one
-    for i, image in enumerate(images):
+    for image in images :
+        '''
+        # Appending the images to the video one by one
+        for i, image in enumerate(images):
             print(i, image)
             cap1 = images[i]
             cap2 = images[i+1]
             print(cap1, cap2)
 
-            '''
-            frame_cnt1 = round(cap1.get(cv2.CAP_PROP_FRAME_COUNT))
-            frame_cnt2 = round(cap2.get(cv2.CAP_PROP_FRAME_COUNT))
-            '''
+            
+            # frame_cnt1 = round(cap1.get(cv2.CAP_PROP_FRAME_COUNT))
+            # frame_cnt2 = round(cap2.get(cv2.CAP_PROP_FRAME_COUNT))
+            
 
             fps = cap1.get(cv2.CAP_PROP_FPS)
             effect_frames= int(fps*2)
@@ -166,9 +168,11 @@ def generate_video():
                     break
 
                 out.write(frame2)
+                
+                '''
 
 
-            #video.write(cv2.imread(os.path.join(image_folder, image)))
+        video.write(cv2.imread(os.path.join(image_folder, image)))
 
         # Deallocating memories taken for window creation
     cv2.destroyAllWindows()
